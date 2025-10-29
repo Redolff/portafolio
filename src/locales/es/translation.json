@@ -1,0 +1,72 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "aboutMe": "Sobre mí",
+    "projects": "Proyectos",
+    "technologies": "Tecnologías"
+  },
+  "containerInfo": {
+    "title": "¡Hola! Soy Federico",
+    "description": "Hola y bienvenido a mi portafolio. Soy Federico Redolfo, un desarrollador web enfocado en crear soluciones innovadoras para problemas reales. Aquí podrás encontrar ejemplos de mi trabajo y habilidades, y ver cómo puedo aportar a tu proyecto.",
+    "button": "Contacto"
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "paragraph1": "Soy Desarrollador Full-Stack, vivo en Argentina, y tengo una licenciatura en TUDAI de la Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN).",
+    "paragraph2": "Tengo 3 años de experiencia trabajando en proyectos complejos, incluyendo plataformas SaaS, buscadores con Google Lens, motores de búsqueda avanzados, integraciones de sistemas, bases de datos, Google Sites, extensiones de Google y plataformas de optimización de rendimiento.",
+    "paragraph3": "Me apasiona construir aplicaciones útiles, aprender continuamente y mejorar los proyectos en los que participo. Soy proactivo, trabajo bien en equipo y disfruto resolviendo desafíos técnicos.",
+    "button": "Descargar CV"
+  },
+  "projects": {
+    "title": "Proyectos Profesionales",
+    "items": [
+      {
+        "title": "Plataforma Matcheador",
+        "description": "Es una plataforma SaaS completa diseñada para gestionar y optimizar los flujos de trabajo en las operaciones de Mercado Libre. Soporta múltiples roles, cada uno con su propio panel, permisos y acciones específicas."
+      },
+      {
+        "title": "ProfileHub",
+        "description": "Aplicación CRUD (Crear, Leer, Actualizar, Eliminar) desarrollada en React, utilizando componentes de Tremor y estilos con Tailwind CSS."
+      },
+      {
+        "title": "Extension Matcheador",
+        "description": "Extensión avanzada de Google Chrome desarrollada para optimizar las tareas de coincidencia de productos en Mercado Libre. Lee dinámicamente tareas desde una base de datos y adapta su interfaz según el tipo de tarea, abriendo ventanas de comparación entre Mercado Libre y sus competidores."
+      },
+      {
+        "title": "Movieflix",
+        "description": "Plataforma estilo Netflix donde los usuarios pueden explorar y gestionar películas, series y juegos. Incluye autenticación segura, perfiles de usuario y listas personales, todo respaldado por un sólido backend MVC conectado a MongoDB."
+      },
+      {
+        "title": "Guía Matcheador",
+        "description": "Sitio informativo de Google que centraliza toda la documentación técnica y operativa del proyecto Matcheador. Incluye videos instructivos, criterios de validación, listas de competidores y países, planillas y enlaces a repositorios."
+      },
+      {
+        "title": "Buscador Netkel",
+        "description": "Buscador avanzado que obtiene resultados optimizados utilizando el motor de búsqueda de Google, ofreciendo coincidencias precisas y rápidas entre productos de diferentes sitios de e-commerce."
+      },
+      {
+        "title": "Test Técnico",
+        "description": "Plataforma de evaluación técnica para candidatos de desarrollo frontend (React) y backend (Python). Incluye pruebas automáticas que brindan retroalimentación instantánea e integración con un backend que envía los resultados por correo electrónico."
+      }
+    ],
+    "buttons": {
+      "moreInfo": "Más información",
+      "visit": "Visitar"
+    }
+  },
+  "technologies": {
+    "title": "Tecnologías"
+  },
+  "contact": {
+    "title": "Contacto",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado correctamente",
+    "error": "Algo salió mal, por favor inténtalo de nuevo más tarde.",
+    "incomplete": "Debes completar todos los campos"
+  }
+}

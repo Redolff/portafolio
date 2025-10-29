@@ -1,0 +1,72 @@
+{
+    "navbar": {
+        "home": "Home",
+        "aboutMe": "About Me",
+        "projects": "Projects",
+        "technologies": "Technologies"
+    },
+    "containerInfo": {
+        "title": "Hi! I'm Federico",
+        "description": "Hello and welcome to my portfolio. I'm Federico Redolfo, a web developer focused on creating innovative solutions for real problems. Here you can find examples of my work and skills, and see how I can contribute to your project.",
+        "button": "Contact"
+    },
+    "aboutMe": {
+        "title": "About Me",
+        "paragraph1": "I am a full-stack developer based in Argentina, with a Bachelor's degree in Tudai from Unicen University.",
+        "paragraph2": "I have 3 years of experience working on complex projects, including SaaS platforms, search engines with Google Lens, advanced programming search engines, system integrations, databases, Google Sites, Google extensions, and performance optimization platforms.",
+        "paragraph3": "I am passionate about building useful applications, continuously learning, and improving the projects I am involved in. I am proactive, work well in teams, and enjoy solving challenging problems.",
+        "button": "Download Resume"
+    },
+    "projects": {
+        "title": "Professional Projects",
+        "items": [
+            {
+                "title": "Platform Matcheador",
+                "description": "It's a complete SaaS platform designed to manage and optimize workflows in Mercado Libre's operations. It supports multiple roles, each with its own dashboards, permissions, and specific actions."
+            },
+            {
+                "title": "ProfileHub",
+                "description": "It is a CRUD (Create, Read, Update, Delete) application developed in React, using Tremor components and styles with Tailwind CSS."
+            },
+            {
+                "title": "Extension Matcheador",
+                "description": "It's an advanced Google Chrome extension developed to optimize product matching tasks on Mercado Libre. It dynamically reads tasks from a database and adapts its interface based on the task type, opening comparison windows between Mercado Libre and its competitors."
+            },
+            {
+                "title": "Movieflix",
+                "description": "Netflix-style platform where users can explore and manage movies, series, and games. It features secure authentication, user profiles, and personal lists all supported by a solid MVC backend connected to MongoDB."
+            },
+            {
+                "title": "Guide Matcheador",
+                "description": "Is an informational Google Site that centralizes all the technical and operational documentation for the Matcheador project. It includes instructional videos, validation criteria, competitor and country lists, spreadsheets, and repository links"
+            },
+            {
+                "title": "Netkel Search",
+                "description": "It is an advanced search platform to obtain optimized results using the Google search engine, offering accurate and fast matches between products from different e-commerce sites."
+            },
+            {
+                "title": "Test Technical",
+                "description": "Technical assessment platform for frontend (React) and backend (Python) development candidates. Features automated tests that provide instant feedback, integrated with a backend that automatically sends the results via email."
+            }
+        ],
+        "buttons": {
+            "moreInfo": "More Info",
+            "visit": "Visit"
+        }
+    },
+    "technologies": {
+        "title": "Technologies"
+    },
+    "contact": {
+        "title": "Contact",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email Address",
+        "message": "Message",
+        "send": "Send",
+        "sending": "Sending...",
+        "success": "Message sent successfully",
+        "error": "Something went wrong, please try again later.",
+        "incomplete": "You must complete all the fields"
+    }
+}

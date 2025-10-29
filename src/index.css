@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container-info{
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(1,1,31,0.9) 0%, rgba(1,1,31,1) 100%);
+}
+
+.container-img::before{
+  background: linear-gradient(rgba(255, 255, 255, 0),rgb(1, 1, 31));
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.container-img{
+  display: block;
+  position: absolute;
+  inset: 0px;
+}
+
+.container-img img{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.section-info{
+  color: white;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info{
+  text-align: left;
+}
+
+.info p{
+  margin-top: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: #CCCCCC;
+  width: 100%;
+  text-align: center;
+}
+
+.info button{
+  width: 50%;
+  background-color: rgb(88, 51, 136);
+  border: none;
+}
+
+.info button:hover{
+  background-color: rgb(51, 29, 78);
+}
+
+.info button a{
+  color: white;
+  width: 100%;
+}
+
+.info h1{
+  background: #ccc;
+  background: linear-gradient(90deg, rgb(0, 89, 255), rgb(224, 64, 0));
+  font-family: Calisto MT, Bookman Old Style, Bookman, Goudy Old Style, Garamond, Hoefler Text, Bitstream Charter, Georgia, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center ;
+}
+
+.img-me{
+  height: 300px;
+  width: 400px;
+  border-radius: 40px;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from { transform: translateX(0); }
+  to { transform: translateY(50px); }
+}
+
+.scrollEffectAbout {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.scrollEffectProyects {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scrollEffectTec {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scrollEffectContact {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scrollEffectResume {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
