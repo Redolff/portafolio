@@ -57,7 +57,7 @@ const Contacto = () => {
         if (result.code === 200) {
             setStatus({
                 succes: true,
-                message: t("contact.sucess")
+                message: t("contact.success")
             })
         } else {
             setStatus({
