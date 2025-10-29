@@ -50,7 +50,7 @@ const Contacto = () => {
                 body: JSON.stringify(formDetails),
             }
         );
-        setButtonText(t("contact.send"))
+        setButtonText(t("contact.send")) 
         let result = await response.json();
         console.log(result);
         setFormDetails(formInitialDetails)
