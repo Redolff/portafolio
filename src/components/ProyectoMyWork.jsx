@@ -1,4 +1,4 @@
-// src/components/ProyectosMyWork.jsx
+import './ProyectosMyWork.css';
 import { Col, Row, Button } from "react-bootstrap";
 import { useScrollEffect } from "../hooks/useScrollEfect";
 import projWork1 from "../assets/Plataforma-Matcheador.png";
@@ -7,7 +7,7 @@ import projWork3 from "../assets/GuiaMatcheador.png";
 import projWork4 from "../assets/movieflix.png";
 import projWork5 from "../assets/netkelSearch.png";
 import projWork6 from "../assets/TestTechnical.png";
-import projWork7 from '../assets/ProfileHub.png'
+import projWork7 from '../assets/profileHub.png'
 import css from '../assets/css.png'
 import tailwindcss from '../assets/tailwindcss.png'
 import react from "../assets/react.png";
@@ -21,7 +21,6 @@ import slack from '../assets/slack.png'
 import postgreSQL from '../assets/postgreSQL.png'
 import mongoDB from '../assets/mongoDB.png'
 import sitesGoogle from '../assets/sitesGoogle.png'
-import './ProyectosMyWork.css';
 import { useTranslation } from "react-i18next";
 
 const ProyectosMyWork = () => {
