@@ -14,7 +14,7 @@ const ContainerInfo = () => {
             <div className="info-card">
               <h1>{t("containerInfo.title")}</h1>
               <p> {t("containerInfo.description")} </p>
-              <a href="#contact" className="d-flex justify-content-start">
+              <a href="#contact" className="d-flex justify-content-center">
                 <Button className="mt-3" variant="primary">
                   {t("containerInfo.button")}
                 </Button>
