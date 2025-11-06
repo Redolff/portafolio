@@ -68,7 +68,7 @@ const ProyectosMyWork = () => {
         {
             image: projWork6,
             tech: [javascript, react, nodejs, python, css],
-            demo: "#",
+            demo: "https://pruebamejoras.netlify.app/",
             github: "#"
         },
 

@@ -100,7 +100,7 @@ const Contacto = () => {
                                 onChange={(e) => onFormUpdate("email", e.target.value)}
                             />
                         </Col>
-                        <Col size={12} sm={12}>
+                        <Col size={12} sm={12} className="px-1">
                             <textarea
                                 rows="6"
                                 value={formDetails.message}

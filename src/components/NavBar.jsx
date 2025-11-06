@@ -5,13 +5,19 @@ import { useTranslation } from "react-i18next"
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home')
     const [scroll, setScroll] = useState(false)
+    const [open, setOpen] = useState(false);
     const { t, i18n } = useTranslation()
-    
-    const currentLang = i18n.language; // idioma actual
+    const currentLang = i18n.language
+
+    const languages = [
+        { code: "es", label: "🇪🇸" },
+        { code: "en", label: "🇬🇧" },
+    ]
 
     const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang);
-    };
+        i18n.changeLanguage(lang)
+        setOpen(false)
+    }
 
     useEffect(() => {
         const onScroll = () => {
@@ -29,7 +35,7 @@ const NavBar = () => {
 
     const onUpdateActivateLink = (value) => {
         setActiveLink(value);
-    };
+    }
 
     return (
         <Navbar expand='md' className={scroll ? "scrolled" : ""}>
@@ -71,22 +77,33 @@ const NavBar = () => {
                         </Nav.Link>
                     </Nav>
 
-                    <div className="language-switcher">
-                        <button 
-                            onClick={() => changeLanguage("es")}
-                            className={currentLang === "es" ? "active-lang" : ""}
+                    <div className="lang-dropdown">
+                        <button
+                            className="lang-selected"
+                            onClick={() => setOpen(!open)}
                         >
-                            🇪🇸
+                            {currentLang === "es" ? "🇪🇸" : "🇬🇧"}
+                            <span className="arrow">{open ? "▲" : "▼"}</span>
                         </button>
-                        <button 
-                            onClick={() => changeLanguage("en")}
-                            className={currentLang === "en" ? "active-lang" : ""}
-                        >
-                            🇬🇧
-                        </button>
+
+                        {open && (
+                            <div className="lang-options">
+                                {languages
+                                    .filter((l) => l.code !== currentLang)
+                                    .map((lang) => (
+                                        <button
+                                            key={lang.code}
+                                            className="lang-option"
+                                            onClick={() => changeLanguage(lang.code)}
+                                        >
+                                            {lang.label}
+                                        </button>
+                                    ))}
+                            </div>
+                        )}
                     </div>
 
-                    <span className="navbar-text">
+                    <span className="navbar-text navbar-mobile-tools">
                         <div className="social-icon">
                             <a href="https://www.linkedin.com/in/federico-nahuel-redolfo/" target="blank">
                                 <i className="fa-brands fa-linkedin-in" aria-hidden="true"></i>

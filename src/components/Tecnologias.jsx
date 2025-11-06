@@ -1,8 +1,7 @@
 import { Card, ListGroup } from "react-bootstrap";
 import react from "../assets/react.png"
+import redux from "../assets/redux.png"
 import node from "../assets/nodejs.png"
-import java from "../assets/java.png"
-import php from "../assets/php.png"
 import js from "../assets/js.png"
 import ts from '../assets/typescript.png'
 import css from "../assets/css.png"
@@ -16,6 +15,7 @@ import supabase from '../assets/supabase.png'
 import mongoDB from '../assets/mongoDB.png'
 import aws from '../assets/aws.png'
 import vercel from '../assets/vercel.png'
+import chatgpt from '../assets/chatgpt.png'
 import { useScrollEffect } from "../hooks/useScrollEfect"
 import { useTranslation } from "react-i18next";
 
@@ -41,25 +41,17 @@ const Tecnologias = () => {
                     </ListGroup.Item>
                     <ListGroup.Item className="col list-group-style">
                         <Card className="card-style">
-                            <Card.Img variant="top" src={node} />
+                            <Card.Img variant="top" src={redux} />
                             <Card.Body>
-                                <Card.Title>NodeJs</Card.Title>
+                                <Card.Title>Redux</Card.Title>
                             </Card.Body>
                         </Card>
                     </ListGroup.Item>
                     <ListGroup.Item className="col list-group-style">
                         <Card className="card-style">
-                            <Card.Img variant="top" src={java} />
+                            <Card.Img variant="top" src={node} />
                             <Card.Body>
-                                <Card.Title>Java</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style" >
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={php} />
-                            <Card.Body>
-                                <Card.Title>PHP</Card.Title>
+                                <Card.Title>NodeJs</Card.Title>
                             </Card.Body>
                         </Card>
                     </ListGroup.Item>
@@ -164,6 +156,14 @@ const Tecnologias = () => {
                             <Card.Img variant="top" src={vercel} />
                             <Card.Body>
                                 <Card.Title>Vercel</Card.Title>
+                            </Card.Body>
+                        </Card>
+                    </ListGroup.Item>
+                    <ListGroup.Item className="col list-group-style">
+                        <Card className="card-style">
+                            <Card.Img variant="top" src={chatgpt} />
+                            <Card.Body>
+                                <Card.Title>OpenAI</Card.Title>
                             </Card.Body>
                         </Card>
                     </ListGroup.Item>

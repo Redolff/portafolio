@@ -274,30 +274,55 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Languages ************/
-.language-switcher {
-  display: flex;
-  gap: 10px;
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
 }
 
-.language-switcher button {
+.lang-selected {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-selected .arrow {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.lang-options {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: rgba(15, 15, 40, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 5px 0;
+  width: 140px;
+  z-index: 999;
+}
+
+.lang-option {
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
   background: transparent;
   border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-  opacity: 0.6;
-}
-
-.language-switcher button:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.language-switcher .active-lang {
   color: white;
-  opacity: 1;
-  transform: scale(1.1);
+  cursor: pointer;
 }
+
+.lang-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 
 /************ About me ************/
 
@@ -598,6 +623,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .links-projects button {
     width: 250px;
   }
+
+  .links-projects button a {
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -657,6 +686,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   /************ Projects ************/
+  .links-projects button {
+    margin-top: 15px;
+  }
+
+  .links-projects button a{
+    margin-top: 30px;
+  }
 
   /************ Contact ************/
   .img-contact {
