@@ -68,11 +68,11 @@ const NavBar = () => {
                             {t("navbar.projects")}
                         </Nav.Link>
                         <Nav.Link
-                            href="#tecnologies"
+                            href="#technologies"
                             className={
-                                activeLink === 'tecnologies' ? 'active navbar-link' : 'navbar-link'
+                                activeLink === 'technologies' ? 'active navbar-link' : 'navbar-link'
                             }
-                            onClick={() => onUpdateActivateLink("tecnologies")}>
+                            onClick={() => onUpdateActivateLink("technologies")}>
                             {t("navbar.technologies")}
                         </Nav.Link>
                     </Nav>

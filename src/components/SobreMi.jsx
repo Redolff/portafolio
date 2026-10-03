@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap';
 import { useScrollEffect } from '../hooks/useScrollEfect';
-import myResume from '../resume/Federico-Redolfo-CV.pdf';
 import { useTranslation } from 'react-i18next';
+import myResume from '../resume/Federico-Redolfo-CV.pdf';
 
 const SobreMi = () => {
     const [visible] = useScrollEffect("scrollEffectAbout")

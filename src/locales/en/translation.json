@@ -6,47 +6,50 @@
         "technologies": "Technologies"
     },
     "containerInfo": {
-        "title": "Hi! I'm Federico",
-        "description": "Hello and welcome to my portfolio. I'm a web developer focused on creating innovative solutions for real problems. Here you can find examples of my work and skills, and see how I can contribute to your project.",
+        "eyebrow": "SOFTWARE ENGINEER",
+        "experience": "+4 years of experience",
+        "title": "Federico Redolfo",
+        "subtitle": "Full Stack • QA Automation • API Testing",
+        "description": "I build software solutions and automate tests to develop, improve and validate real-world applications, combining full-stack development, API integration and workflow automation.",
         "button": "Contact"
     },
     "aboutMe": {
         "title": "About Me",
-        "paragraph1": "I am a full-stack developer based in Argentina, with a Bachelor's degree in Tudai from Unicen University.",
-        "paragraph2": "I have 3 years of experience working on complex projects, including SaaS platforms, search engines with Google Lens, advanced programming search engines, system integrations, databases, Google Sites, Google extensions, and performance optimization platforms.",
-        "paragraph3": "I am passionate about building useful applications, continuously learning, and improving the projects I am involved in. I am proactive, work well in teams, and enjoy solving challenging problems.",
+        "paragraph1": "I am a software engineer with more than 4 years of experience, specializing in full-stack development, QA automation, and software troubleshooting.",
+        "paragraph2": "I have worked in a variety of settings, ranging from developing and maintaining tools for Mercado Libre’s operations to creating web and e-commerce solutions as a freelancer. I currently work at Claro, where I am involved in the automation and validation of APIs and workflows for a large-scale project.",
+        "paragraph3": "This diversity allowed me to develop a flexible approach to my work, combining technical and functional insights to find solutions. I incorporate artificial intelligence tools into my workflow to learn from and optimize processes, while always maintaining a technical perspective on the solutions I implement.",
         "button": "Download Resume"
     },
     "projects": {
-        "title": "Professional Projects",
+        "title": "Featured Projects",
         "items": [
             {
-                "title": "Platform Matcheador",
-                "description": "It's a complete SaaS platform designed to manage and optimize workflows in Mercado Libre's operations. It supports multiple roles, each with its own dashboards, permissions, and specific actions."
+                "title": "Isthar - QA Automation",
+                "description": "Large-scale enterprise project focused on automating and validating operational workflows. I develop E2E and API tests using Cypress and Gherkin, integrating validations across interfaces, external services, and databases. I work closely with the development team to identify issues and ensure workflow stability before production."
             },
             {
-                "title": "ProfileHub",
-                "description": "It is a CRUD (Create, Read, Update, Delete) application developed in React, using Tremor components and styles with Tailwind CSS."
+                "title": "Matcheador Platform",
+                "description": "Internal platform used daily by Mercado Libre commercial analysts to analyze listings and compare them with competitors. It replaced Excel-based processes and centralized the management of initiatives, tasks, and results. I contributed to full-stack development, database optimization, and user experience design."
             },
             {
-                "title": "Extension Matcheador",
-                "description": "It's an advanced Google Chrome extension developed to optimize product matching tasks on Mercado Libre. It dynamically reads tasks from a database and adapts its interface based on the task type, opening comparison windows between Mercado Libre and its competitors."
+                "title": "Matcheador Extension",
+                "description": "Advanced Google Chrome extension developed to optimize product matching tasks at Mercado Libre. It dynamically reads tasks from a database and adapts its interface according to the task type, opening comparison windows between Mercado Libre and its competitors."
             },
             {
-                "title": "Movieflix",
-                "description": "Netflix-style platform where users can explore and manage movies, series, and games. It features secure authentication, user profiles, and personal lists all supported by a solid MVC backend connected to MongoDB."
+                "title": "Consultorio CM&T",
+                "description": "Management system developed to digitalize the operations of a trauma clinic. It centralizes patients, professionals, appointments, and medical records, and includes a self-service portal for patients. Freelance project developed from scratch and currently in production."
             },
             {
-                "title": "Guide Matcheador",
-                "description": "Is an informational Google Site that centralizes all the technical and operational documentation for the Matcheador project. It includes instructional videos, validation criteria, competitor and country lists, spreadsheets, and repository links"
+                "title": "Court Center",
+                "description": "Management system developed to digitalize the operations of a padel club. It centralizes court reservations, bookings, classes, and court management within a single platform. Freelance project developed from scratch and currently in production."
             },
             {
-                "title": "Netkel Search",
-                "description": "It is an advanced search platform to obtain optimized results using the Google search engine, offering accurate and fast matches between products from different e-commerce sites."
+                "title": "Pola Outfits",
+                "description": "Development and optimization of an e-commerce store built on Tienda Nube, including catalog organization and management, store design and code customization, and continuous improvements to navigation and shopping experience. I currently provide ongoing support and contribute to the platform's evolution."
             },
             {
-                "title": "Test Technical",
-                "description": "Technical assessment platform for frontend (React) and backend (Python) development candidates. Features automated tests that provide instant feedback, integrated with a backend that automatically sends the results via email."
+                "title": "Technical Assessment",
+                "description": "Technical assessment platform for frontend (React) and backend (Python) development candidates. Includes automated tests that provide instant feedback and backend integration for sending results via email."
             }
         ],
         "buttons": {
@@ -55,7 +58,12 @@
         }
     },
     "technologies": {
-        "title": "Technologies"
+        "title": "Technologies",
+        "categories": {
+            "frontend": "Frontend",
+            "backend": "Backend & Databases",
+            "tools": "Tools & Infrastructure"
+        }
     },
     "contact": {
         "title": "Contact",

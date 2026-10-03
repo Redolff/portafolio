@@ -6,43 +6,46 @@
     "technologies": "Tecnologías"
   },
   "containerInfo": {
-    "title": "¡Hola! Soy Federico",
-    "description": "Hola y bienvenido a mi portafolio. Soy un desarrollador web enfocado en crear soluciones innovadoras para problemas reales. Aquí podrás encontrar ejemplos de mi trabajo y habilidades, y ver cómo puedo aportar a tu proyecto.",
+    "eyebrow": "SOFTWARE ENGINEER",
+    "experience": "+4 años de experiencia",
+    "title": "Federico Redolfo",
+    "subtitle": "Full Stack • QA Automation • API Testing",
+    "description": "Desarrollo soluciones de software y automatizo pruebas para construir, mejorar y validar aplicaciones reales, combinando desarrollo full stack, integración de APIs y automatización de flujos.",
     "button": "Contacto"
   },
   "aboutMe": {
     "title": "Sobre mí",
-    "paragraph1": "Soy Desarrollador Full-Stack, vivo en Argentina, y tengo una licenciatura en TUDAI de la Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN).",
-    "paragraph2": "Tengo 3 años de experiencia trabajando en proyectos complejos, incluyendo plataformas SaaS, buscadores con Google Lens, motores de búsqueda avanzados, integraciones de sistemas, bases de datos, Google Sites, extensiones de Google y plataformas de optimización de rendimiento.",
-    "paragraph3": "Me apasiona construir aplicaciones útiles, aprender continuamente y mejorar los proyectos en los que participo. Soy proactivo, trabajo bien en equipo y disfruto resolviendo desafíos técnicos.",
+    "paragraph1": "Soy un Software Engineer con más de 4 años de experiencia, con un perfil orientado al desarrollo Full Stack, QA Automation y resolución de problemas de software.",
+    "paragraph2": "He trabajado en distintos contextos, desde el desarrollo y mantenimiento de herramientas para operaciones de Mercado Libre, hasta la creación de soluciones web y e-commerce como Freelance. Actualmente trabajo en Claro, participando en la automatización y validación de APIs y flujos de un proyecto de gran escala.",
+    "paragraph3": "Esta diversidad me permitió desarrollar una forma de trabajo adaptable, combinando visión técnica y funcional para encontrar soluciones. Incorporo herramientas de Inteligencia Artificial en mi flujo de trabajo para aprender y optimizar procesos, manteniendo siempre el criterio técnico sobre las soluciones que implemento.",
     "button": "Descargar CV"
   },
   "projects": {
-    "title": "Proyectos Profesionales",
+    "title": "Proyectos Destacados",
     "items": [
       {
-        "title": "Plataforma Matcheador",
-        "description": "Es una plataforma SaaS completa diseñada para gestionar y optimizar los flujos de trabajo en las operaciones de Mercado Libre. Soporta múltiples roles, cada uno con su propio panel, permisos y acciones específicas."
+        "title": "Isthar - QA Automation",
+        "description": "Proyecto empresarial de gran escala enfocado en la automatización y validación de flujos operativos. Desarrollo pruebas E2E y de API utilizando Cypress y Gherkin, integrando validaciones sobre interfaces, servicios externos y bases de datos. Trabajo junto al equipo de desarrollo para detectar errores y garantizar la estabilidad de los flujos antes de llegar a producción."
       },
       {
-        "title": "ProfileHub",
-        "description": "Aplicación CRUD (Crear, Leer, Actualizar, Eliminar) desarrollada en React, utilizando componentes de Tremor y estilos con Tailwind CSS."
+        "title": "Plataforma Matcheador",
+        "description": "Plataforma interna utilizada diariamente por analistas comerciales de Mercado Libre para analizar publicaciones y compararlas con la competencia. Reemplazó procesos basados en Excel y centralizó la gestión de iniciativas, tareas y resultados. Participé en el desarrollo full stack, optimización de la base de datos y diseño de la experiencia de usuario."
       },
       {
         "title": "Extension Matcheador",
         "description": "Extensión avanzada de Google Chrome desarrollada para optimizar las tareas de coincidencia de productos en Mercado Libre. Lee dinámicamente tareas desde una base de datos y adapta su interfaz según el tipo de tarea, abriendo ventanas de comparación entre Mercado Libre y sus competidores."
       },
       {
-        "title": "Movieflix",
-        "description": "Plataforma estilo Netflix donde los usuarios pueden explorar y gestionar películas, series y juegos. Incluye autenticación segura, perfiles de usuario y listas personales, todo respaldado por un sólido backend MVC conectado a MongoDB."
+        "title": "Consultorio CM&T",
+        "description": "Sistema de gestión desarrollado para digitalizar la operación de un consultorio traumatológico. Centraliza pacientes, profesionales, turnos e historias clínicas, e incluye un portal de autogestión para pacientes. Proyecto freelance desarrollado desde cero y actualmente en producción."
       },
       {
-        "title": "Guía Matcheador",
-        "description": "Sitio informativo de Google que centraliza toda la documentación técnica y operativa del proyecto Matcheador. Incluye videos instructivos, criterios de validación, listas de competidores y países, planillas y enlaces a repositorios."
+        "title": "Court Center",
+        "description": "Sistema de gestión desarrollado para digitalizar la operación de un club de pádel. Centraliza reservas, turnos, clases y administración de canchas desde una única plataforma. Proyecto freelance desarrollado desde cero y actualmente en producción."
       },
       {
-        "title": "Buscador Netkel",
-        "description": "Buscador avanzado que obtiene resultados optimizados utilizando el motor de búsqueda de Google, ofreciendo coincidencias precisas y rápidas entre productos de diferentes sitios de e-commerce."
+        "title": "Pola Outfits",
+        "description": "Desarrollo y optimización de un e-commerce sobre Tienda Nube, incluyendo organización y gestión del catálogo, personalización del diseño y código de la tienda, y mejoras continuas en la navegación y experiencia de compra. Actualmente continúo brindando soporte y acompañando la evolución de la plataforma."
       },
       {
         "title": "Test Técnico",
@@ -55,7 +58,12 @@
     }
   },
   "technologies": {
-    "title": "Tecnologías"
+    "title": "Tecnologías",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend & Base de Datos",
+      "tools": "Herramientas & Infraestructura"
+    }
   },
   "contact": {
     "title": "Contacto",

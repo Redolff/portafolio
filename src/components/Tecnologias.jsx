@@ -1,6 +1,4 @@
-import { Card, ListGroup } from "react-bootstrap";
 import react from "../assets/react.png"
-import redux from "../assets/redux.png"
 import node from "../assets/nodejs.png"
 import js from "../assets/js.png"
 import ts from '../assets/typescript.png'
@@ -16,6 +14,13 @@ import mongoDB from '../assets/mongoDB.png'
 import aws from '../assets/aws.png'
 import vercel from '../assets/vercel.png'
 import chatgpt from '../assets/chatgpt.png'
+import angular from "../assets/angular.png"
+import php from "../assets/php.png"
+import cypress from "../assets/cypress.webp"
+import gitlab from "../assets/gitlab.png"
+import postman from "../assets/postman.png"
+import claude from "../assets/claude.png"
+
 import { useScrollEffect } from "../hooks/useScrollEfect"
 import { useTranslation } from "react-i18next";
 
@@ -23,154 +28,82 @@ const Tecnologias = () => {
     const [visible] = useScrollEffect("scrollEffectTec")
     const { t } = useTranslation()
 
+    const technologies = {
+        frontend: [
+            { name: "React", icon: react },
+            { name: "JavaScript", icon: js },
+            { name: "TypeScript", icon: ts },
+            { name: "HTML", icon: html },
+            { name: "CSS", icon: css },
+            { name: "Tailwind CSS", icon: tailwindcss },
+            { name: "Bootstrap", icon: bs },
+            { name: "Angular", icon: angular }
+        ],
+
+        backend: [
+            { name: "NodeJS", icon: node },
+            { name: "PHP", icon: php },
+            { name: "PostgreSQL", icon: postgresql },
+            { name: "MySQL", icon: mysql },
+            { name: "MongoDB", icon: mongoDB },
+            { name: "Supabase", icon: supabase }
+        ],
+
+        tools: [
+            { name: "Git", icon: git },
+            { name: "Gitlab", icon: gitlab },
+            { name: "Cypress", icon: cypress },
+            { name: "AWS", icon: aws },
+            { name: "Vercel", icon: vercel },
+            { name: "Postman", icon: postman },
+            { name: "openAI", icon: chatgpt },
+            { name: "Claude", icon: claude }
+        ]
+    };
+
     return (
-        <div 
-            className={`container-tecnologies scrollEffectTec ${visible && "visible"}`}
-            id="tecnologies"    
+        <section
+            className={`technologies-section scrollEffectTec ${visible ? "visible" : ""}`}
+            id="technologies"
         >
-            <h1>{t("technologies.title")}</h1>
-            <div className="tecnologies">
-                <ListGroup className="row" horizontal>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={react} />
-                            <Card.Body>
-                                <Card.Title>React</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={redux} />
-                            <Card.Body>
-                                <Card.Title>Redux</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={node} />
-                            <Card.Body>
-                                <Card.Title>NodeJs</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style" >
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={mysql} />
-                            <Card.Body>
-                                <Card.Title>MySQL</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style" >
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={postgresql} />
-                            <Card.Body>
-                                <Card.Title>PostgreSQL</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style" >
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={js} />
-                            <Card.Body>
-                                <Card.Title>Javascript</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style" >
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={ts} />
-                            <Card.Body>
-                                <Card.Title>TypeScript</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={html} />
-                            <Card.Body>
-                                <Card.Title>HTML</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={css} />
-                            <Card.Body>
-                                <Card.Title>CSS</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={bs} />
-                            <Card.Body>
-                                <Card.Title>Bootstrap</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={tailwindcss} />
-                            <Card.Body>
-                                <Card.Title>Tailwind CSS</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={git} />
-                            <Card.Body>
-                                <Card.Title>Git</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={supabase} />
-                            <Card.Body>
-                                <Card.Title>Supabase</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={mongoDB} />
-                            <Card.Body>
-                                <Card.Title>MongoDB</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={aws} />
-                            <Card.Body>
-                                <Card.Title>AWS</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={vercel} />
-                            <Card.Body>
-                                <Card.Title>Vercel</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="col list-group-style">
-                        <Card className="card-style">
-                            <Card.Img variant="top" src={chatgpt} />
-                            <Card.Body>
-                                <Card.Title>OpenAI</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </ListGroup.Item>
-                </ListGroup>
+            <div className="technologies-container">
+
+                <header className="technologies-header">
+                    <h1>{t("technologies.title")}</h1>
+                </header>
+
+                {Object.entries(technologies).map(([category, items]) => (
+                    <div
+                        className="technology-category"
+                        key={category}
+                    >
+                        <h2>
+                            {t(`technologies.categories.${category}`)}
+                        </h2>
+
+                        <div className="technologies-grid">
+                            {items.map((technology) => (
+                                <div
+                                    className="technology-item"
+                                    key={technology.name}
+                                >
+                                    <img
+                                        src={technology.icon}
+                                        alt=""
+                                    />
+
+                                    <span>
+                                        {technology.name}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+
             </div>
-        </div>
-    )
+        </section>
+    );
 }
 
 export default Tecnologias
